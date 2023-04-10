@@ -105,7 +105,7 @@ size_m = int(input('Input side b: '))
 
 size_k = int(input('Input count of element: '))
 
-if size_k % size_n == 0 or size_k % size_m == 0:
+if size_k < size_n * size_m and size_k % size_n == 0 or size_k % size_m == 0:
     print (f'{size_n} {size_m} {size_k} -> yes')
 
 else:
